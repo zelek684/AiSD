@@ -56,16 +56,9 @@ def dane(dan):
     tyg = {1: "poniediałek",2:"wtorek",3:"środa",4:"czwartek",5:"piątek",6:"sobota",7:"niedziela"}
     return tyg[dan]
 print(dane(7))
-
-def dane10(slowo):
-    y=True
-    for x in range(len(slowo)):
-        if slowo[x]!=slowo[-x-1]:
-            y=False
-
-    return y
-
-print(dane10("Ang"))
-print(dane10("yn"))
+#zadanie10
+def dane10(slowa):
+    return slowa[::-1]==slowa
+print(dane10(str(input())))
 
 
